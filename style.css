@@ -14,7 +14,7 @@ img {
 /* ----------------
     Grid Layaout
 ---------------- */
-/* .row {
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -10px;
@@ -22,8 +22,16 @@ img {
 }
 
 .row > * {
-    padding: 0 10px;
-} */
+    padding: 10px 10px;
+}
+
+.col{
+    width: calc(100vh / 7);
+}
+
+header{
+    height: 25px
+}
 
 /* ----------------
     Typography
@@ -31,6 +39,20 @@ img {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #000000;
+}
+
+/* ----------------
+    Main
+---------------- */
+main {
+    overflow: auto;
+    margin-right: 2px;
+    height: calc(100vh - 105px);
+}
+
+.card-images{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* ----------------
@@ -61,18 +83,9 @@ body {
     margin: auto;
     margin-top: 45px;
     margin-bottom: 20px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
-.col {
-    width: calc(100% / 7);
-    height: 150px;
-    display: flex;
-    background-image: url(404-200x300.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-}
- 
 /* ----------------
     Footer
 ---------------- */
@@ -87,13 +100,33 @@ footer {
     justify-content: space-between;
     line-height: 80px;
     font-size: 18px;
-    gap: 10px;
-
+    gap: 15px;
 }
 
-.button{
+.button {
     background-color: #4a4a4a;
     color: red;
+}
+
+.share {
+    color: #4bc800;
+}
+
+.info-sx {
+    margin-left: 10px;
+}
+
+.card-images {
+    position: relative;
+}
+
+.card-tags {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: #485767;
+    color: white;
+    padding: 5px;
 }
 
 
